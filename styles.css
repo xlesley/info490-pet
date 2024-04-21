@@ -6,6 +6,24 @@ body, html {
     color: #333; /* Dark grey color for text */
 }
 
+h1 {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: slideFadeIn 1s ease-in-out forwards;
+}
+
+@keyframes slideFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
 #logoSelf {
     font-size: 1.4rem;
 }
@@ -55,9 +73,10 @@ body, html {
     color: white;
     /* text-transform: uppercase; */
     cursor: pointer;
-    border-radius: 5px;
+    border-radius: 10px;
     font-weight: bold;
     font-size: 1rem;
+    font-family: Josefin Sans, TeX Gyre Adventor, URW Gothic L, sans-seri;
 }
 
 #login_button{
@@ -84,36 +103,6 @@ body, html {
     margin: 1rem auto; /* Centering paragraph */
     font-family: Josefin Sans, TeX Gyre Adventor, URW Gothic L, sans-seri;
 }
-
-@media screen and (max-width: 768px) {
-    .nav-links, .auth {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .nav-links li, .auth div {
-        margin: 0.5rem 0;
-    }
-
-    .signup-button {
-        margin-top: 0.5rem;
-    }
-
-    .main1 {
-        padding: 10% 5%;
-    }
-
-    .title {
-        font-size: 3rem;
-    }
-
-    .main1 p {
-        font-size: 1rem;
-    }
-}
-
-
-
 
 .logo {
     color: #FF6F61;
@@ -163,7 +152,7 @@ input[type="email"], textarea {
     padding: 1rem; /* Padding for inputs */
     margin: 0.5rem 0; /* Margin for spacing */
     border: none; /* No border */
-    border-radius: 0; /* No border radius */
+    border-radius: 10px;
 }
 
 textarea {
@@ -179,7 +168,6 @@ button {
     cursor: pointer; /* Cursor for clicking */
     margin-top: 1rem; /* Spacing above button */
 }
-
 
 
 /* services section */
@@ -202,17 +190,22 @@ button {
 
 
 .service-item {
+    width: 25%;
     display: flex; /* Enable flexbox */
     flex-direction: column; /* Stack children vertically */
     align-items: center; /* Center children horizontally */
     text-align: center; /* Center text */
- /* Space between service items */
 }
   
 .service-item img {
-    max-width: 400px; /* Ensures the image is not wider than its container */
-    max-height: 500px; /* Sets a maximum height for the image */
-    margin-bottom: 1rem; /* Space below the image */
+    /*max-width: 400px; /* Ensures the image is not wider than its container */
+    /*max-height: 500px; /* Sets a maximum height for the image */
+    /*margin-bottom: 1rem; /* Space below the image */
+    
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+    overflow: hidden;
 }
 
 .service-item button {
@@ -220,3 +213,52 @@ button {
    background-color: #FF6F61;
   }
 
+.hidden {
+    opacity: 0;
+    transition: opacity 1s ease;
+}
+
+/* Fade in effect */
+.visible {
+    opacity: 1;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .nav-links, .auth {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav-links li, .auth div {
+        margin: 0.5rem 0;
+    }
+
+    .signup-button {
+        margin-top: 0.5rem;
+    }
+
+    .main1 {
+        padding: 10% 5%;
+    }
+
+    .title {
+        font-size: 3rem;
+    }
+
+    .main1 p {
+        font-size: 1rem;
+    }
+
+    .service-item {
+        width: 49%; /* 2 cards per row on smaller screens */
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+    .service-item {
+        width: 100%; /* 1 card per row on smallest screens */
+    }
+}
