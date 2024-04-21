@@ -1,0 +1,222 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Josefin Sans, TeX Gyre Adventor, URW Gothic L, sans-seri;
+    background: #FFF1E0; /* A light warm background */
+    color: #333; /* Dark grey color for text */
+}
+
+#logoSelf {
+    font-size: 1.4rem;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 1rem 5%;
+    background: transparent;
+    font-size: 1.2rem;
+}
+
+
+.logo, .nav-links a, .auth a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.nav-links, .auth {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li, .auth div {
+    margin-left: 2rem;
+}
+
+.nav-links a:hover, .auth a:hover {
+    color: #FF6F61; /* Orange color for hover state */
+}
+
+
+.auth {
+    display: flex;
+    align-items:baseline; /* Align items vertically */
+    justify-content: space-between;
+    font-size: 1rem;
+}
+
+
+.signup-button {
+    background-color: #FF6F61; /* Orange color for the button */
+    border: none;
+    padding: 0.5rem 1rem;
+    color: white;
+    /* text-transform: uppercase; */
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+#login_button{
+    /* margin: 20px; */
+    padding: 0.5rem 1rem;
+}
+
+.main1 {
+    text-align: center;
+    padding: 5% 10%;
+}
+
+.title {
+    color: #FF6F61; /* Orange color for the title */
+    font-size: 5rem; /* Large font size for the title */
+    margin: 0;
+}
+
+.main1 p {
+    color: #555; /* Slightly lighter color for the paragraph */
+    font-size: 2.5rem; /* Larger font size for readability */
+    max-width: 70%; /* Max width for paragraph for better readability */
+    padding-top: 3rem;
+    margin: 1rem auto; /* Centering paragraph */
+    font-family: Josefin Sans, TeX Gyre Adventor, URW Gothic L, sans-seri;
+}
+
+@media screen and (max-width: 768px) {
+    .nav-links, .auth {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav-links li, .auth div {
+        margin: 0.5rem 0;
+    }
+
+    .signup-button {
+        margin-top: 0.5rem;
+    }
+
+    .main1 {
+        padding: 10% 5%;
+    }
+
+    .title {
+        font-size: 3rem;
+    }
+
+    .main1 p {
+        font-size: 1rem;
+    }
+}
+
+
+
+
+.logo {
+    color: #FF6F61;
+}
+
+.footer-content {
+    background: #FF6F61; /* Footer background color */
+    color: white; /* Text color for footer */
+    padding: 2rem; /* Padding for spacing */
+    display: flex; /* Using flexbox for layout */
+    flex-wrap: wrap; /* Allow wrapping for responsiveness */
+}
+
+.container {
+    max-width: 1200px; /* Max container width */
+    margin: auto; /* Center the container */
+    display: flex;
+    justify-content: space-between; /* Space out columns */
+}
+
+.column {
+    flex: 1; /* Each column takes equal space */
+    margin: 1rem; /* Margin for spacing */
+}
+
+.contact-form {
+    flex-basis: 100%; /* Contact form takes full width on smaller screens */
+}
+
+.column h2 {
+    margin-bottom: 1rem; /* Spacing under headers */
+}
+
+.column a {
+    display: block; /* Make links block for easier clicking */
+    margin-bottom: 0.5rem; /* Spacing between links */
+    color: white; /* Text color for links */
+    text-decoration: none; /* No underline on links */
+}
+
+.column a:hover {
+    text-decoration: underline; /* Underline on hover for links */
+}
+
+input[type="email"], textarea {
+    width: 100%; /* Full width inputs */
+    padding: 1rem; /* Padding for inputs */
+    margin: 0.5rem 0; /* Margin for spacing */
+    border: none; /* No border */
+    border-radius: 0; /* No border radius */
+}
+
+textarea {
+    height: 150px; /* Fixed height for textarea */
+    resize: vertical; /* Allow vertical resizing */
+}
+
+button {
+    background-color: #333; /* Button background color */
+    color: white; /* Button text color */
+    padding: 1rem 2rem; /* Button padding */
+    border: none; /* No border */
+    cursor: pointer; /* Cursor for clicking */
+    margin-top: 1rem; /* Spacing above button */
+}
+
+
+
+/* services section */
+.services-section {
+    padding: 2rem 0
+}
+
+.services-section h2 {
+    text-align: center;
+    color: #FF6F61;
+    font-size: 5rem;
+}
+
+.services-container {
+    display: flex; /* Use flexbox to layout service items */
+    flex-wrap: wrap; /* Allow the items to wrap on smaller screens */
+    justify-content: space-around; /* Center the items in the container */
+    padding: 1rem; /* Space between the items */
+  }
+
+
+.service-item {
+    display: flex; /* Enable flexbox */
+    flex-direction: column; /* Stack children vertically */
+    align-items: center; /* Center children horizontally */
+    text-align: center; /* Center text */
+ /* Space between service items */
+}
+  
+.service-item img {
+    max-width: 400px; /* Ensures the image is not wider than its container */
+    max-height: 500px; /* Sets a maximum height for the image */
+    margin-bottom: 1rem; /* Space below the image */
+}
+
+.service-item button {
+   margin-bottom: 4rem;
+   background-color: #FF6F61;
+  }
+
