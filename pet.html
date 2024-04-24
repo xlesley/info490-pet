@@ -3,12 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Condesa - Interior Design Studio</title>
+    <title>PetLife</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
     <!-- Google Font similar to the one in the image -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Scribble&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Honk&family=Rubik+Doodle+Shadow&family=Rubik+Scribble&display=swap" rel="stylesheet">
+
 </head>
 <body>
     <header>
@@ -28,8 +34,12 @@
     <main>
         <section class="main1">
             <h1 class="title">PetLife</h1>
-            <p>Explore a vibrant online space dedicated to all things pet-related.  </p>
+            <p class="intro">Explore a vibrant online space dedicated to all things pet-related.  </p>           
         </section>
+        <div style="width: 100%; height: 100%">
+            <img src="img/background.svg" style="display: block; width: 100%; height: 100%"/>
+        </div>
+        
 
         <section class="services-section hidden animate__animated">
             <h2>Our Features</h2>
@@ -77,6 +87,10 @@
                 <h2>Social</h2>
                 <a href="https://instagram.com">Instagram</a>
                 <a href="https://facebook.com">Facebook</a>
+                <a href="mailto:info@example.com">info@example.com</a>
+                <a href="#">
+                    <i style="font-size:24px" class="fa">&#xf09b;</i>
+                </a>
             </div>
             <div class="column contact-form">
                 <h2>Let's stay connected</h2>
@@ -84,7 +98,7 @@
                 <form action="#" method="POST">
                     <input type="email" id="email" name="email" placeholder="Email *">
                     <textarea id="message" name="message" placeholder="Message *"></textarea>
-                    <button type="submit">Send Away</button>
+                    <button type="submit" class="send-away-btn">Send Away</button>
                 </form>
             </div>
         </div>

@@ -70,13 +70,29 @@ h1 {
     background-color: #FF6F61; /* Orange color for the button */
     border: none;
     padding: 0.5rem 1rem;
-    color: white;
+    color: #FFF1E0;
     /* text-transform: uppercase; */
     cursor: pointer;
     border-radius: 10px;
     font-weight: bold;
     font-size: 1rem;
-    font-family: Josefin Sans, TeX Gyre Adventor, URW Gothic L, sans-seri;
+    font-family: inherit;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    opacity: 50%; 
+}
+
+.signup-button:hover {
+    /* filter: brightness(120%);
+    transform: scale(1.2); */
+    opacity: 1;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s; 
+}
+
+.carousel-inner {
+    /* padding: 50px; Adjust padding size as needed */
+    margin: 2rem;
 }
 
 #login_button{
@@ -90,16 +106,19 @@ h1 {
 }
 
 .title {
+    font-family: Rubik Doodle Shadow;
     color: #FF6F61; /* Orange color for the title */
-    font-size: 5rem; /* Large font size for the title */
+    font-size: 20rem; /* Large font size for the title */
     margin: 0;
+    font-weight: bold;
 }
 
 .main1 p {
     color: #555; /* Slightly lighter color for the paragraph */
-    font-size: 2.5rem; /* Larger font size for readability */
+    font-size: 3rem; /* Larger font size for readability */
     max-width: 70%; /* Max width for paragraph for better readability */
     padding-top: 3rem;
+    font-weight: bold;
     margin: 1rem auto; /* Centering paragraph */
     font-family: Josefin Sans, TeX Gyre Adventor, URW Gothic L, sans-seri;
 }
@@ -148,6 +167,7 @@ h1 {
 }
 
 input[type="email"], textarea {
+    font-family: monospace;
     width: 100%; /* Full width inputs */
     padding: 1rem; /* Padding for inputs */
     margin: 0.5rem 0; /* Margin for spacing */
@@ -160,7 +180,7 @@ textarea {
     resize: vertical; /* Allow vertical resizing */
 }
 
-button {
+.button {
     background-color: #333; /* Button background color */
     color: white; /* Button text color */
     padding: 1rem 2rem; /* Button padding */
@@ -169,6 +189,28 @@ button {
     margin-top: 1rem; /* Spacing above button */
 }
 
+
+.send-away-btn {
+    font-family: inherit;
+    font-weight: bold;
+    font-size: 1rem;
+    border-radius: 10px;
+    border: none;
+    padding: 0.5rem 1rem;
+    color: white; 
+    background-color: transparent;
+    /* background-color: #FF6F61; */
+    cursor: pointer;
+    /* text-decoration: underline; */
+    transition: background-color 0.3s, color 0.3s;
+    border-radius: 10px; 
+    border: 2px solid white;
+}
+
+.send-away-btn:hover {
+    background-color: white;
+    color: #FF6F61;
+}
 
 /* services section */
 .services-section {
@@ -222,8 +264,6 @@ button {
 .visible {
     opacity: 1;
 }
-
-
 
 @media screen and (max-width: 768px) {
     .nav-links, .auth {
